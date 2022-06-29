@@ -5,12 +5,11 @@ let submitBtn = document.querySelector(".submit_btn")
 
 let checkIfSame = () => {
   if (createPass.value != confirmPass.value) {
-  alert("Passwords don't match")
   confirmTxt.forEach(target => target.textContent = "*Passwords don't match")
   createPass.value = "";
-  return confirmPass.value = "";
+  confirmPass.value = "";
+  return  
 }
 }
 
 confirmPass.addEventListener('blur', checkIfSame)
-
