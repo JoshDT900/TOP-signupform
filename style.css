@@ -1,0 +1,47 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.flex-wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.description-text {
+  height: 40vh;
+}
+
+.column-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container {
+  width: fit-content;
+  position: relative;
+}
+
+.img-text {
+  position: absolute;
+  color: aliceblue;
+  width: 100%;
+  top: 275px;
+  height: 10vh;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.6);
+  align-items: center;
+  justify-content: center;
+}
+
+.img-text > p {
+  padding: 10px;
+  font-size: 50px;
+  margin-right: auto;
+}
+
+.img-text > img {
+  height: 70%;
+  padding: 30px;
+  margin-left: auto;
+}
