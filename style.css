@@ -5,6 +5,12 @@
   text-decoration: none;
 }
 
+a:link,
+a:visited {
+  color: grey;
+  padding: 3px;
+}
+
 .flex-wrapper {
   display: flex;
   height: 100vh;
