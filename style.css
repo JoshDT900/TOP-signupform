@@ -1,4 +1,5 @@
 * {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 0px;
   margin: 0px;
 }
@@ -6,19 +7,27 @@
 .flex-wrapper {
   display: flex;
   height: 100vh;
+  width: 100%;
 }
 
 .description-text {
-  height: 40vh;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  background-color: darkgrey;
+  border-bottom: 4px solid black;
+  justify-content: center;
 }
 
 .column-box {
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .image-container {
   width: fit-content;
+  height: fit-content;
   position: relative;
 }
 
@@ -26,7 +35,7 @@
   position: absolute;
   color: aliceblue;
   width: 100%;
-  top: 275px;
+  top: 30%;
   height: 10vh;
   display: flex;
   background-color: rgba(0, 0, 0, 0.6);
@@ -44,4 +53,84 @@
   height: 70%;
   padding: 30px;
   margin-left: auto;
+}
+
+.image-container > .credit-box {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.description-text > p:nth-child(1) {
+  height: 100px;
+  width: 800px;
+  margin-top: auto;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.description-text > p:nth-child(2) {
+  height: 50px;
+  width: 800px;
+  padding: 20px;
+  font-size: 25px;
+}
+
+.form-box {
+  padding: 20px;
+}
+
+.form-box > form div > input {
+  margin: 10px;
+  display: block;
+  width: 35%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.form-box > form > div {
+  display: flex;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.form-box > form > div > div {
+  width: 100%;
+}
+
+.form-box > form > div > div label {
+  margin-left: 10px;
+}
+
+.form-box > form > div > div input {
+  border: 3px solid black;
+  width: 90%;
+}
+
+.form-box > form > div > div input:focus {
+  border-color: blue;
+}
+
+.form-box > form > div > div input:invalid:focus {
+  border: 3px solid red;
+}
+
+.form-box > form > div > .submit_btn {
+  padding: 12px;
+  margin-left: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 4px;
+}
+
+.form-box > form > div > .submit_btn:hover {
+  border: 4px solid black;
+  background-color: darkgray;
+}
+
+.backImg > img {
+  height: 100vh;
 }
